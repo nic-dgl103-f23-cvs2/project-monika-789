@@ -3,17 +3,25 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Your Website</title>
+    <title>Courtenayappliances</title>
     <link rel="stylesheet" href="style.css" />
     <!-- DGL 103 CVS1 - Monika - Project_Homepage -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
   </head>
   <body>
     <!-- Top Bar -->
-    <div class="top-bar container">
-      <div class="logo">
-        <img src="img/logo.png" alt="Logo" class="logo-img" />
+
+    <div class="container top-bar">
+      <div class="menu-btn">
+        <i class="fa-solid fa-bars"></i>
       </div>
-      <ul class="menu">
+      <nav class="navbar">
+        <div class="logo">
+          <a href="index.html">
+            <img src="img/logo.png" alt="logo" class="logo-img">
+          </a>
+        </div>
+      <ul class="main-menu">
         <li><a href="index.html">Home</a></li>
         <li><a href="about.html">About</a></li>
         <li><a href="contact.html">Contact</a></li>
@@ -25,60 +33,64 @@
         <li><a href="#">Rebates</a></li>
         <li><a href="#">Clearence Center</a></li>
       </ul>
+      </nav>
     </div>
 
+    <div class="search-main container">
+      <div style="flex: 1"><i class="fa fa-phone"></i> Get Expert help</div>
+
     <!-- Search Box -->
-    <div class="search-box container">
-      <input type="text" class="search-input" placeholder="Search..." />
+    <div class="search-box">
+      <input type="text" class="search-input" placeholder="Search...">
       <button class="search-btn">Search</button>
-      <!-- <div class="search-links">
-        <a href="#">Link 1</a>
-        <a href="#">Link 2</a>
-        <a href="#">Link 3</a>
-      </div> -->
     </div>
+    <div style="flex: 1; text-align: right">
+      <h4 style="margin: 0"><i class="fa fa-user"></i> Account</h4>
+      Hello, Login
+    </div>
+  </div>
 
     <!-- Hero Section -->
     <section class="hero">
-      <h1>Welcome to Your Website</h1>
-      <p>Discover amazing things on our platform.</p>
-      <a href="portfolio.html" class="portfolio-link">View Portfolio</a>
+      <div style="bottom: 100px; position: absolute; right: 20rem">
+        <a href="index.html" class="portfolio-link">View Portfolio</a>
+      </div>
     </section>
 
     <!-- Features Section -->
     <section class="features container">
       <div class="feature-box">
         <!-- <h2>Special Offer 1</h2> -->
-        <img src="https://placehold.co/400x400" alt="Special Offer 1" />
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        <img src="img/products/p1.jpg" alt="Special Offer 1" />
+        <p>36" Dual Fuel Range - 4 Burners And Infrared Charbroiler</p>
         <a href="#" class="learn-more-link">Learn More</a>
       </div>
 
       <div class="feature-box">
         <!-- <h2>Special Offer 2</h2> -->
-        <img src="https://placehold.co/400x400" alt="Special Offer 2" />
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        <img src="img/products/p2.jpg" alt="Special Offer 2" />
+        <p>15" Transitional Fryer Module Low-Profile Stainless Steel Lid</p>
         <a href="#" class="learn-more-link">Learn More</a>
       </div>
 
       <div class="feature-box">
         <!-- <h2>Special Offer 3</h2> -->
-        <img src="https://placehold.co/400x400" alt="Special Offer 3" />
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        <img src="img/products/p3.jpg" alt="Special Offer 3" />
+        <p>800 Series French Door Bottom Mount 36' Clean Stainless Steel</p>
         <a href="#" class="learn-more-link">Learn More</a>
       </div>
 
       <div class="feature-box">
         <!-- <h2>Special Offer 4</h2> -->
-        <img src="https://placehold.co/400x400" alt="Special Offer 4" />
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        <img src="img/products/p4.jpg" alt="Special Offer 4" />
+        <p>Benchmark® Induction Slide-in Range Stainless steel</p>
         <a href="#" class="learn-more-link">Learn More</a>
       </div>
 
       <div class="feature-box">
         <!-- <h2>Special Offer 5</h2> -->
-        <img src="https://placehold.co/400x400" alt="Special Offer 5" />
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        <img src="img/products/p5.jpg" alt="Special Offer 5" />
+        <p>800 Series Built-in Coffee Machine Stainless steel</p>
         <a href="#" class="learn-more-link">Learn More</a>
       </div>
     </section>
@@ -96,31 +108,28 @@
       <div class="testimonial-box-main">
         <div class="testimonial-box">
           <div class="stars">⭐⭐⭐⭐⭐</div>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          <p>On time, good communication by installers, and completed our dryer install great.</p>
           <div class="testimonial-info">
             <span class="name">John Doe</span>
-            <span class="location">New York, NY</span>
-            <span class="date">November 1, 2023</span>
+            <span class="date">November 1, 2022</span>
           </div>
         </div>
 
         <div class="testimonial-box">
           <div class="stars">⭐⭐⭐⭐⭐</div>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          <p>Very pleased with the delivery. The men were polite, professional andskilled.</p>
           <div class="testimonial-info">
-            <span class="name">John Doe</span>
-            <span class="location">New York, NY</span>
-            <span class="date">November 1, 2023</span>
+            <span class="name">Robert B</span>
+            <span class="date">March 18, 2023</span>
           </div>
         </div>
 
         <div class="testimonial-box">
           <div class="stars">⭐⭐⭐⭐</div>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          <p>Both delivery guys were communicative, helpful, and speedy with setting up my TV.</p>
           <div class="testimonial-info">
-            <span class="name">John Doe</span>
-            <span class="location">New York, NY</span>
-            <span class="date">November 1, 2023</span>
+            <span class="name">Colleen M</span>
+            <span class="date">September 21, 2023</span>
           </div>
         </div>
       </div>
@@ -140,7 +149,7 @@
      <footer class="footer container">
       <div class="footer-box">
         <h3>About Us</h3>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        <p>In the Comox Valley, we are locally owned on Vancouver Island, British Columbia.</p>
       </div>
       <div class="footer-box">
         <h3>Main Navigation</h3>

@@ -12,14 +12,12 @@ body {
 
 /* Top Bar Styles */
 .top-bar {
-  /* background-color: #333; */
-  /* color: #fff; */
-  padding: 0.3rem 1rem 0.3rem 1rem;
+  padding:  2rem 1.5rem 2rem 1.5rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-.logo {
+/* .logo {
   flex: 1;
   text-align: center;
 }
@@ -47,12 +45,19 @@ body {
   text-decoration: none;
   color: #000;
   font-weight: bold;
+} */
+
+.search-main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 1rem;
+  border-top: 1px solid #eee;
 }
 
 /* Search Box Styles */
 .search-box {
-  background-color: #eee;
-  padding: 2rem 1rem 2rem 1rem;
+  flex: 3;
   text-align: center;
 }
 
@@ -70,7 +75,7 @@ body {
   cursor: pointer;
 }
 
-.search-links {
+/* .search-links {
   margin-top: 10px;
 }
 
@@ -78,16 +83,18 @@ body {
   text-decoration: none;
   color: #333;
   margin-right: 10px;
-}
+} */
 
 /* Hero Section Styles */
 .hero {
-  background-image: url("https://placehold.co/1000x400/000000/000000/png?text=.");
-  background-size: cover;
+  background-image: url("img/b1.jpg");
+  background-size: 100%;
   background-position: center;
   color: #fff;
-  text-align: center;
-  padding: 100px 0;
+  padding: 3rem 1rem 3rem 1rem;
+  height: 40vh;
+  position: relative;
+  background-repeat: no-repeat;
 }
 
 .hero h1 {
@@ -102,12 +109,12 @@ body {
 
 .portfolio-link {
   /* display: inline-block; */
-  padding: 10px 20px;
-  background-color: #333;
+  padding: 0.5rem 1.5rem;
+  background-color: rgb(72, 72, 181);
   color: #fff;
   text-decoration: none;
-  font-weight: bold;
-  border-radius: 5px;
+  border-radius: 10px;
+  font-size: 90%;
 }
 
 /* Features Section Styles */
@@ -122,6 +129,15 @@ body {
 .feature-box {
   width: calc(20% - 20px);
   margin-bottom: 20px;
+  padding: 0.3rem;
+}
+
+.feature-box:hover{
+  transform: scale(1.1);
+  cursor: pointer;
+  box-shadow: 2px 5px 20px #999898;
+  transition: all 1s;
+  border-radius: 10px;
 }
 
 .feature-box h2 {
@@ -132,6 +148,7 @@ body {
 .feature-box img {
   width: 100%;
   height: auto;
+  box-shadow: 1px 2px 4px #dad9d9;
 }
 
 .feature-box p {
@@ -147,6 +164,7 @@ body {
   text-decoration: none;
   font-weight: bold;
   border-radius: 5px;
+  box-shadow: 2px 2px 6px #999898;
 }
 /* Testimonials Section Styles */
 .testimonials {
@@ -187,7 +205,6 @@ body {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   margin-bottom: 20px;
   width: 33%;
-
   padding: 1rem;
 }
 
@@ -201,8 +218,11 @@ body {
   margin-bottom: 10px;
 }
 
+.testimonial-box img{
+  width: 100%;
+} 
+
 .name,
-.location,
 .date {
   font-size: 0.8em;
   margin-bottom: 5px;
@@ -223,6 +243,7 @@ body {
 .call-to-action p {
   color: #fff;
   font-size: 1.5rem;
+  font-weight: normal;
 }
 .action-left {
   flex: 3;
@@ -302,6 +323,7 @@ body {
   background-position: center;
   color: #fff;
   margin: 2rem 0 2rem 0;
+  text-align: center;
 }
 
 .hero-content {
@@ -390,4 +412,64 @@ form h2 {
   text-align: center;
   font-size: 2.2rem;
   font-weight: normal;
+}
+
+.menu-btn {
+  display: none;
+}
+.logo {
+  width: 25%;
+}
+
+.logo-img {
+  width: 50%;
+  height: auto;
+}
+
+
+/* Responsive Styles */
+@media only screen and (max-width: 768px) {
+  .search-main {
+    flex-direction: column;
+  }
+  .search-main div {
+    margin-top: 2rem;
+    width: 100%;
+    text-align: center !important;
+  }
+  .main-menu {
+    position: absolute;
+    top: 50px;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    flex-direction: column;
+    background-color: #252525;
+    transition: 0.5s all ease;
+    /* visibility: hidden; */
+    display: none;
+    align-items: center;
+    transform: translateX(-800px);
+    padding-top: 60px;
+    z-index: 1000;
+  }
+
+  .main-menu.show {
+    transform: translateX(0px);
+    transition: 0.5s all ease;
+  }
+
+  .main-menu li a {
+    margin-bottom: 10px;
+    display: block;
+    color: white;
+  }
+  .menu-btn {
+    display: block;
+    position: absolute;
+    color: black;
+    top: 10px;
+    right: 30px;
+    font-size: 2rem;
+  }
 }
