@@ -1,59 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8" >
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" >
     <title>Your Website</title>
-    <link rel="stylesheet" href="style.css" />
-     <!-- DGL 103 CVS1 - Monika - Project_About -->
+    <link rel="stylesheet" href="style.css" >
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
-    />
+    >
   </head>
   <body>
     <!-- Top Bar -->
-    <div class="top-bar container">
-      <div class="logo">
-        <img src="img/logo.png" alt="Logo" class="logo-img" />
+    <div class="container top-bar">
+      <div class="menu-btn">
+        <i class="fa-solid fa-bars"></i>
       </div>
-      <ul class="menu">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="contact.html">Contact</a></li>
-        <li><a href="#">Products</a></li>
-        <li><a href="#">Services</a></li>
-        <li><a href="#">Shop by brand</a></li>
-        <li><a href="#">Review</a></li>
-        <li><a href="#">Blog</a></li>
-        <li><a href="#">Rebates</a></li>
-        <li><a href="#">Clearance Center</a></li>
-        <!-- <li><a href="#">link</a></li>
-        <li><a href="#">link</a></li>
-        <li><a href="#">link</a></li> -->
-      </ul>
+      <nav class="navbar">
+        <div class="logo">
+          <a href="index.html"> <img src="img/logo.png" alt="logo" class="logo-img" ></a>
+        </div>
+        <ul class="main-menu">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="#">Shop by brand</a></li>
+          <li><a href="#">Review</a></li>
+          <li><a href="#">Rebates</a></li>
+        </ul>
+      </nav>
     </div>
 
     <!-- Search Box -->
-    <div class="search-box container">
-      <input type="text" class="search-input" placeholder="Search..." />
-      <button class="search-btn">Search</button>
-      <!-- <div class="search-links">
-        <a href="#">Link 1</a>
-        <a href="#">Link 2</a>
-        <a href="#">Link 3</a>
-      </div> -->
+    <div class="search-main container">
+      <div><i class="fa fa-phone"></i> Get Expert help</div>
+      <!-- Search Box -->
+      <div class="search-box">
+        <input type="text" class="search-input" placeholder="Search..." >
+        <button class="search-btn">Search</button>
+      </div>
+      <div>
+        <h4 ><i class="fa fa-user"></i> Account</h4>
+        Hello, Login
+      </div>
+    </div>
+    <!-- Hero Section -->
+    <div class="hero">
+      <div class="portfolio_btn">
+        <a href="portfolio.html" class="portfolio-link">View Portfolio</a>
+      </div>
     </div>
 
-    <!-- Hero Section -->
-    <section class="hero">
-      <h1>Welcome to Your Website</h1>
-      <p>Discover amazing things on our platform.</p>
-      <a href="portfolio.html" class="portfolio-link">View Portfolio</a>
-    </section>
-
     <!-- Features Section -->
-    <section class="features container about">
+    <div class="features container about">
       <p>
         <b>Courtenay Appliances</b> has been a recognized name in the heart of
         the Comox Valley for over <u>30 years</u>. Locally owned and operated,
@@ -66,12 +65,12 @@
         our hassle-free after purchase care. Our team is dedicated to helping
         you find the perfect ingredients to cook up your dream kitchen!
       </p>
-    </section>
+    </div>
 
     <section class="testimonials container">
       <div class="testimonial-box-main">
         <div class="testimonial-box">
-          <img src="img/team/Chantelle.jpg" width="100%" />
+          <img src="img/team/Chantelle.jpg" alt="Chantelle">
           <div class="testimonial-info">
             <h4 class="name">Chantelle Mailer</h4>
             <b class="location">General Manager</b>
@@ -79,7 +78,7 @@
           </div>
         </div>
         <div class="testimonial-box">
-          <img src="img/team/Darryl.jpeg" width="100%" />
+          <img src="img/team/Darryl.jpg" alt="Darryl" >
           <div class="testimonial-info">
             <h4 class="name">Darryl Bennett</h4>
             <b class="location">Logistics Manager</b>
@@ -88,7 +87,7 @@
         </div>
 
         <div class="testimonial-box">
-          <img src="img/team/Kirk.jpeg" width="100%" />
+          <img src="img/team/Kirk.jpg" alt="Kirk">
           <div class="testimonial-info">
             <h4 class="name">Kirk Friederich</h4>
             <b class="location">Sales Consultant </b>
@@ -97,7 +96,7 @@
         </div>
 
         <div class="testimonial-box">
-          <img src="img/team/Jasper.jpg" width="100%" />
+          <img src="img/team/Jasper.jpg" alt="Jasper">
           <div class="testimonial-info">
             <h4 class="name">Jasper Myers</h4>
             <b class="location">Sales Consultant & Media </b>
@@ -111,7 +110,7 @@
     <section class="testimonials container">
       <div class="testimonial-box-main">
         <div class="testimonial-box">
-          <img src="img/team/Harsha.jpg" width="100%" />
+          <img src="img/team/Harsha.jpg" alt="Harsha">
           <div class="testimonial-info">
             <h4 class="name">Harsha Vallabh</h4>
             <b class="location">Admin & Sales Consultant </b>
@@ -119,7 +118,7 @@
           </div>
         </div>
         <div class="testimonial-box">
-          <img src="img/team/Ryan.jpg" width="100%" />
+          <img src="img/team/Ryan.jpg" alt="Ryan">
           <div class="testimonial-info">
             <h4 class="name">Ryan Benoit</h4>
             <b class="location">Warehouse, Shipping & Receiving </b>
@@ -128,7 +127,7 @@
         </div>
 
         <div class="testimonial-box">
-          <img src="img/team/Marie.jpg" width="100%" />
+          <img src="img/team/Marie.jpg" alt="Marie" >
           <div class="testimonial-info">
             <h4 class="name">Marie Steele</h4>
             <b class="location">Operations Assistant & Customer Consultant </b>
@@ -137,7 +136,7 @@
         </div>
 
         <div class="testimonial-box">
-          <img src="img/team/Kleopuptra.jpg" width="100%" />
+          <img src="img/team/Kleopuptra.jpg" alt="Kleopuptra">
           <div class="testimonial-info">
             <h4 class="name">Kleopuptra</h4>
             <b class="location">Floor Supervisor </b>
@@ -150,7 +149,7 @@
 
     <section class="call-to-action container">
       <div class="action-left">
-        <p>Ready to experience something amazing? Join us today!</p>
+        <h3>Ready to experience something amazing? Join us today!</h3>
       </div>
       <div class="action-right">
         <a href="contact.html" class="contact-link">Contact Us</a>
@@ -161,7 +160,7 @@
     <footer class="footer container">
       <div class="footer-box">
         <h3>About Us</h3>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        <p>Courtenay Appliances in the Comox Valley, is locally owned on Vancouver Island, British Columbia.</p>
       </div>
       <div class="footer-box">
         <h3>Main Navigation</h3>
@@ -185,5 +184,12 @@
         <h3>&copy; 2023 Your Website</h3>
       </div>
     </footer>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script>
+      document.querySelector(".menu-btn").addEventListener("click", abc);
+      function abc() {
+        document.querySelector(".main-menu").classList.toggle("show");
+      }
+    </script>
   </body>
 </html>
